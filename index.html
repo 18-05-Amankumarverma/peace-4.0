@@ -1,0 +1,784 @@
+<html>
+	<head>
+		<meta http-equiv="refresh" content="">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="animate.css"/>
+		<style type="text/css">
+			*{
+				margin:0;
+				padding:0
+			}
+			body{
+				font-family:arial;
+			}
+			#container{
+				width:1200px;
+				margin:0px auto;/**130%/
+				/*background-color:#1D334B;*/
+				
+					
+			}
+			#landing-page-container{
+				height:800px;
+				width:1200px;
+			 }
+			 #nav-bar{
+				height:70px;
+				width:1200px;
+				background-color:#f6f7f8;
+				border-radius:20px;
+				margin:10px 0px;
+			 }
+			 #nav-bar #logo{
+				width:180px;
+				height:70px;
+				float:left;
+				border-radius:20px 0px 0px 20px
+			 }
+			 #nav-bar #search-bar{
+				height:70px;
+				width:400px;
+				float:left;
+				
+			 }
+			 #nav-bar #search-bar div{
+				height: 20px;
+    			width: 360px;
+    			padding: 10px 10px;
+    			border-radius: 20px;
+    			margin-left: 10px;
+    			margin-top: 15px;
+    			/* margin: 0px auto; */
+    			float: left;
+    			background-color:#fff;
+			 }
+			 #nav-bar #logo img{   
+   				 width: 130px;
+   				 height: 70px;
+   				 /* border-radius: 20px; */
+   				 margin: 0px auto;
+   				 margin-left: 20px;
+
+			 }
+			 #all-page-links{
+				height:70px;
+				width:620px;
+				float:left;
+				border-radius:0px 20px 20px 0px;
+				padding-top:16px;
+				
+			 }
+			 #all-page-links ul{
+				list-style-type: none;
+				margin-right:10px;
+				float:right;
+
+			 }
+			 #all-page-links ul li{
+				float:left;
+				padding:10px 25px;
+				margin-left:2px;
+				height:35px;
+			 }
+			 #all-page-links ul li span{
+				
+				height:2px;
+				width:0px;
+				display:block;
+				position:absolute;
+				transition:all 1s;
+			 }
+			 #all-page-links ul li:hover span{
+				width:90px;
+				background-color:olive;
+			 }
+			 #all-page-links ul li a{
+				text-decoration:none;
+				color:black;
+			 }
+			 #landing-page{
+				height:730px;
+				width:1200px;
+			    background-image:url('https://images.unsplash.com/photo-1524069290683-0457abfe42c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE4fHx8ZW58MHx8fHx8&w=1000&q=80');
+				background-position:center;
+				background-repeat:no-repeat;
+				background-size:cover;
+				opacity:0.9;
+				position: relative;
+			 }
+			 @keyframes slider{
+				20%{
+					background-image:url('background/img1.jpg');
+				}
+				40%{
+					background-image:url('background/img2.jpg');
+				}
+				6%{
+					background-image:url('background/img3.jpg');
+				}
+				8%{
+					background-image:url('background/img4.jpg');
+				}
+				100%{
+					background-image:url('background/img5.jpg');
+				}
+			 }
+			 #landing-page h1{
+				font-size:70px;
+				color:white;
+				font-weight:700;
+				letter-spacing:2px;
+				position: absolute;
+				top:150px;
+				left:150px;
+				width:900px;
+				text-align:center;
+				text-shadow:4px 3px 0 #1d9d74, 9px 8px 0 rgba(0,0,0,0.15);
+				
+			 }
+			 #landing-page p{
+				font-size:20px;
+				color:white;
+				position:absolute;
+			 }
+			 #landing-page a{
+				box-shadow: rgb(0, 176, 185) 0px 5px 15px;
+				padding:25px 50px;
+				font-size:30px;
+				font-weight:700;
+				letter-spacing:2px;
+				text-decoration:none;
+				color:white;
+				border:4px solid white;
+				position:absolute;
+				top:400px;
+				right:460px;
+			 }
+			 @keyframes change{
+				0%{
+					box-shadow:0px 5px 15px rgb(33, 193, 105);
+				}
+				20%{
+					box-shadow:0px 5px 15px rgb(174, 10, 10);
+				}
+				40%{
+					box-shadow:0px 5px 15px rgb(185, 0, 163);
+				}
+				60%{
+					box-shadow:0px 5px 15px rgb(33, 115, 192);
+				}
+				80%{
+					box-shadow:0px 5px 15px rgb(255, 11, 11)
+				}
+				100%{
+					box-shadow:0px 5px 15px rgb(218, 255, 11);
+				}
+
+
+			 }
+			 #page1{
+				margin-top:40px;
+				height:580px;
+				width:1180px;
+				padding:10px;
+			 }
+			 #page1 div{
+    			height: 570px;
+    			padding-top: 10px;
+    			width: 1180px;
+				
+			 }
+			 #page1 div h1{
+    			height: 100px;
+    			text-align: center;
+    			font-size: 50px;
+    			width: 800px;
+    			margin: 0px auto;
+			 }
+			 #page1 div p{    
+    			height: 360px;
+    			width: 760px;
+    			text-align: justify;
+    			line-height: 28px;
+    			padding: 20px;
+    			letter-spacing: 2px;
+    			margin: 0px auto;
+				color: #0B1A4A;
+   				 font-size: 17px;
+   				 font-weight: 400;
+
+			 }
+			 #page2{
+				height:800px;
+				width:1200px;
+			 }
+			 #page2 #page2-container{
+				height:380px;
+				width:1180px;
+				padding:10px;
+			 }
+			
+			 #page2 #page2-container #box1{
+				height:380px;
+				width:300px;
+				float:left;
+				margin:0px 46px;
+				border-radius:16px;
+				box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+			 }
+			 #page2 #page2-container #box1 img{
+				width:300px;
+				height:150px;
+				border-radius:16px 16px 0px 0px;
+
+			 }
+			 #page2 #page2-container #box1 p{
+				font-size:16px;
+				line-height:25px;
+				padding:10px;
+				padding-top:25px;
+				text-align:justify;
+			 }
+			 #page2 #page2-container #box1 h4{
+				font-size:25px;	
+				padding:10px;
+			 }
+			 #page2 #page2-container #box1 #bar-container{
+				height:30px;
+				width:280px;
+				padding:10px;
+			 }
+
+			 #above-box1{
+				display:none;
+				height:380px;
+				width:300px;
+				position:absolute;
+				margin:-359px 0px 0px 0px;
+				background-color: #3DEB8A ;
+			 
+			 }
+			 #box1:hover #above-box1{
+				display:block
+				
+			 }
+			 #above-box1 a:first-child{
+				padding: 10px 25px;
+				display: block;
+				/* height: 200px; */
+				height: 35px;
+				font-size: 25px;
+				margin: 70px 75px 70px 75px;
+				width: 100px;
+				text-decoration: none;
+				letter-spacing: 2px;
+				font-weight: 600;
+				background-color:yellow;
+				color:black;
+				border-radius:28px;
+				box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+			 }
+			 #above-box1 a:last-child{
+				display: block;
+				font-size: 20px;
+				margin: 0px 75px 70px 75px;
+				letter-spacing: 2px;
+							
+			 }
+			 #page2-container #box1 p{	
+				font-size: 17px;
+   				 font-weight: 400;
+				color: #0B1A4A;
+				 
+			 }
+			 #sponsers{
+				height:100px;
+				font-size:60px;
+				width:1200px;
+				text-transform:uppercase;
+				text-align:center;
+				margin-top:60px;
+			 }
+			 #patners{
+				height:500px;
+				width:1200px;
+				margin-top:10px;
+
+			 }
+			 #patners div marquee img{
+				border-radius:16px;
+				transition:transform .6s;
+			 }
+			 #patners div marquee img:hover{
+				transform:scale(1.1,1.1);
+			 }
+			 #donaters{
+				height:700px;
+				width:1200px;
+				background-color:gray;
+				margin-top:60px;
+			 }
+			 #testimonals{
+				height: 448px;
+    			width: 1200px;
+    			margin: 50px 0px;
+				margin-bottom:200px;
+    			padding: 50px 0px 0px 0px;
+			 }
+			#testimonals h1{
+				font-size:60px;
+				text-align:center;
+			}
+			 #testimonals #text{
+				font-size: 20px;
+                background-color: rgba(0,0,0,0.2);
+                padding: 15px;
+                height: 269px;
+                width: 400px;
+                position: relative;
+                border-radius: 20px;
+				
+			 }
+			 #testimonals .text1{
+				margin:100px auto;
+			 }
+			 #testimonals .text2{
+				margin:200px auto;
+			 }
+			 #testimonals .text3{
+				margin:300px auto;
+			 }
+			 #testimonals #text div{
+				height:100px;
+				width:100px;
+				border-radius:68px;
+				background-color:red;
+				position:absolute;
+				top:-50px;
+				left:154px;
+			
+			 }
+			 
+			 #testimonals #text div img{
+				height:100px;
+				width:100px;
+				border-radius:68px;
+				
+			 }
+			 
+
+
+
+
+
+
+			#footer{
+				height:500px;
+				width:1200px;
+				border-top:1px solid #1b1b1b;
+				margin:0px auto;
+				border-radius:20px 20px 0px 0px;
+				background-color:#0c6051;
+			}
+			#footer #threeFooter{
+				height:500px;
+				width:1200px;
+			}
+			#footer #threeFooter #footer-list{
+				height:500px;
+				width:900px;
+				float:left;
+			}
+			#footer #threeFooter #footer-list #down{
+				height:80px;
+				width:720px;
+				position:absolute;
+				margin-top:400px;
+				
+			}
+			#footer #threeFooter #footer-list #down{
+				padding:10px 40px;
+				width:820px
+				
+			}
+			
+			#footer #threeFooter #footer-list .list{
+				height:380px;
+				width:300px;
+				float:left;
+				padding:20px 0px 0px;
+
+				
+			}
+			
+			
+			#footer #threeFooter #footer-list .list ul{
+				height:300px;
+				list-style-type:none;
+				width:200px;
+				float:left;
+				
+			}
+			#footer #threeFooter #footer-list .list ul li{
+			     font-size:14px;
+				 font-weight:500;
+				 padding:5px;
+				 margin-left:46px;
+				 color:white;
+				
+			}
+			#footer #threeFooter #footer-list .list ul li:first-child{
+				font-size:30px;
+				text-decoration:underline;
+				margin-bottom:20px;
+				
+			}
+			#footer #threeFooter #map{
+				height:500px;
+				width:300px;
+				float:left;
+			}
+			#footer #threeFooter #map div:first-child{
+				height:383px;
+				width:300px;
+				float:left;
+				margin-top:16px;
+			
+
+			}#footer #threeFooter #map div:last-child{
+				height:100px;
+				width:300px;
+				float:left;
+				
+
+			}
+			#footer #threeFooter #map div:last-child img{
+				padding:20px 25px
+
+			}
+			
+
+			
+            
+		#navbar-container{
+            width:231;
+            height:250px;
+			position: absolute;
+    		z-index: 9999;
+			display:block;
+			right:247px;
+			top:80px;
+			display:none;
+			
+        }
+        #navbar-container #drop-down{
+            height: 231px;
+            width: 180px;
+            background-color: plum;
+            list-style-type: none;
+            padding: 10px;
+            font-family: arial;
+        }
+		#nav-bar #all-page-links ul #drop:hover #navbar-container{
+			animation-name:dropdown;
+			animation-duration:1s;
+			animation-delay:.2s;
+		    display:block;
+		}
+		@keyframes dropdown{
+			to{
+				top:80px;
+				
+			}
+			from{
+				top:-350px;
+			}
+		}
+		#navbar-container #drop-down li{
+			padding:0px;
+			width:180px;
+			letter-spacing:
+		}
+        #navbar-container #drop-down li a{
+            text-decoration:none;
+            font-size:16px;
+            line-height:37px;
+        }
+
+
+		</style> 
+	</head>
+	<body>
+		<div id="container">
+			<div id="landing-page-container">
+				<div id="nav-bar">
+					<div id="logo">
+						<img src="background/logo/logo3.png"/>
+					</div>
+					<div id="search-bar">
+						<div>
+							Search
+						</div>
+					</div>
+					<div id="all-page-links">
+						<ul>
+							<li><a href="../index.html">Home</a><span></span></li>
+							<li><a href="pages/about.html">About Us</a><span></span></li>
+							<li id="drop"><a href="#">Our Work</a><span></span>
+								
+								<div id="navbar-container">
+									<ul id="drop-down">
+										<li><a href="pages/education.html">Education</a></li>
+										<li><a href="pages/womenEmpowerment.html">Women Empowerment</a></li>
+										<li><a href="#">Disaster Response</a></li>
+										<li><a href="#">Child Labour</a></li>
+										<li><a href="#">Old age</a></li>
+										<li><a href="pages/health.html">Health</a></li>
+									</ul>
+								</div>
+
+
+							</li>
+							<li><a href="pages/contact.html">Contact Us</a><span></span></li>
+						</ul>
+					</div>
+
+				</div>
+				<div id="landing-page">
+					<h1 class=" wow animate__zoomInUp">Give a helping hand to those who need it</h1>
+					<p></p>
+					<a href="#" class="wow pulse" data-wow-iteration="infinite" data-wow-duration="500ms">DONATE</a>
+				</div>
+			</div>
+			<div id="page1">
+				<div>
+					<h1>Support Us with your Donation</h1>
+					<p>
+						Peace foundation is a non-profitable organizations working in various thematic areas. Peace Foundation is also an NGO and we look up to your generous support to cover our operational cost. Donate to help us continue on this movement to change lives while also availing a deduction under 80G of Income Tax Act.
+
+In case you intend to donate to multiple NGOs in India, who are also our partners, you can write to us at <i><span style="color:blue;">peacefoundation@gmail.com</span></i> We assure to take full responsibility to rationally distribute the donation, for the projects and campaigns who are in most need.
+
+Being a tax exempt entity, donors can avail tax benefits for all donations made to DevPro-INDIAdonates under Section 80G of Income Tax Act. We assure to take full responsibility to rationally distribute the donation, for the projects and campaigns who are in most need
+					</p>
+				</div>
+			</div>
+
+			<div id="page2">
+				<div id="page2-container">
+					<div id="box1" class=" wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
+						<img src="https://digitallearning.eletsonline.com/wp-content/uploads/2018/12/Effective-education-system-%E2%80%93-A-must-for-nation-building.jpg"/>
+						<p>Education works with the objective of empowering underprivileged children by providing education nutrition and wellness support.</p>
+						<h4>10,000</h4>
+						<div id="bar-container">
+							<div id="bar" style="background-color:black;height:10px;width:280px;margin-top:10px;border-radius:16px;">
+								<span style="float:right;display:block;background-color:white;border:1px solid black;height:10px;width:200px;border-radius:16px;"></span>
+							</div>
+							<div id="bar-circle" style="background-color:black;position:absolute;border-radius:50%;height:20px;width:20px;margin-left:62px;margin-top:-16px;"></div>
+						</div>
+
+						<div id="above-box1" style="margin-top:-384px;">
+							<a href="#">Donate</a>
+							<a href="#">Read Details</a>
+						</div>
+					</div>
+					<div id="box1" class=" wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
+						<img src="https://images.everydayhealth.com/homepage/health-topics-2.jpg?sfvrsn=757370ae_2"/>
+						<p>health programme takes primary healthcare services to the doorsteps of underserved communities in both rural and urban India.</p>
+							<h4>1000</h4>
+						<div id="bar-container">
+							<div id="bar" style="background-color:black;height:10px;width:280px;margin-top:10px;border-radius:16px;">
+								<span style="float:right;display:block;background-color:white;border:1px solid black;height:10px;width:270px;border-radius:16px;"></span>
+							</div>
+							<div id="bar-circle" style="background-color:black;position:absolute;border-radius:50%;height:20px;width:20px;margin-left:8px;margin-top:-16px;"></div>
+						</div>
+
+						<div id="above-box1" style="margin-top:-384px;">
+							<a href="#">Donate</a>
+							<a href="#">Read Details</a>
+						</div>
+					</div>
+					<div id="box1" class=" wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
+						<img src="https://www.womenentrepreneurindia.com/entrepreneur_images/news_images/kdkyv3.png"/>
+						<p>Women empowerment programme Swabhiman initiated in 2005 reaches out to marginalized women with interventions in nutrition healthcare.</p>
+						<h4>80,000</h4>
+						<div id="bar-container">
+							<div id="bar" style="background-color:black;height:10px;width:280px;margin-top:10px;border-radius:16px;">
+								<span style="float:right;display:block;background-color:white;height:10px;width:100px;border-radius:16px;border:1px solid black;;"></span>
+							</div>
+							<div id="bar-circle" style="background-color:black;position:absolute;border-radius:50%;height:20px;width:20px;margin-left:163px;margin-top:-16px;"></div>
+						</div>
+
+						<div id="above-box1" style="margin-top:-384px;">
+							<a href="#">Donate</a>
+							<a href="#">Read Details</a>
+						</div>
+					</div>
+				</div>
+				<div id="page2-container">
+					<div id="box1" class=" wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
+						<img src="https://static.independent.co.uk/2022/10/26/16/UN%20emissions%20gap%20report%20comp.jpg"/>
+						<p>Focused on children and their families responds to the call of humanity in times of Disaster happen.</p>
+						<h4>10,000</h4>
+						<div id="bar-container">
+							<div id="bar" style="background-color:black;height:10px;width:280px;margin-top:10px;border-radius:16px;">
+								<span style="float:right;display:block;background-color:white;height:10px;width:200px;border:16px;border:1px solid black;"></span>
+							</div>
+							<div id="bar-circle" style="background-color:black;position:absolute;border-radius:50%;height:20px;width:20px;margin-left:62px;margin-top:-16px;"></div>
+						</div>
+
+						<div id="above-box1">
+							<a href="#">Donate</a>
+							<a href="#">Read Details</a>
+						</div>
+					</div>
+
+					<div id="box1" class=" wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
+						<img src="https://img.freepik.com/free-vector/flat-world-day-against-child-labour-illustration_23-2148937400.jpg"/>
+						<p>Foreign Exchange Management Act (1999) aims to consolidate and amend the law relating </p>
+						<h4>60,000</h4>
+						<div id="bar-container">
+							<div id="bar" style="background-color:black;height:10px;width:280px;margin-top:10px;border-radius:16px;">
+								<span style="float:right;display:block;background-color:white;height:10px;width:144px;border-radius:16px;border:1px solid black;"></span>
+							</div>
+							<div id="bar-circle" style="background-color:black;position:absolute;border-radius:50%;height:20px;width:20px;margin-left:135px;margin-top:-16px;"></div>
+						</div>
+
+						<div id="above-box1">
+							<a href="#">Donate</a>
+							<a href="#">Read Details</a>
+						</div>
+					</div>
+					<div id="box1" class=" wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
+						<img src="https://static.toiimg.com/thumb/msid-100754319,width-400,resizemode-4/100754319.jpg"/>
+						<p>Leading charitable organization working with and for older people in India for more than 40 years.</p>
+						<h4>120,000</h4>
+						<div id="bar-container">
+							<div id="bar" style="background-color:black;height:10px;width:280px;margin-top:10px;border-radius:16px;">
+								<span style="float:right;display:block;background-color:white;height:10px;width:56px;border-radius:16px;border:1px solid black;"></span>
+							</div>
+							<div id="bar-circle" style="background-color:black;position:absolute;border-radius:50%;height:20px;width:20px;margin-left:215px;margin-top:-16px;"></div>
+						</div>
+
+						<div id="above-box1">
+							<a href="#">Donate</a>
+							<a href="#">Read Details</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="testimonals">
+					<h1>Testimonals</h1>
+					<div id="text" class="text1" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px">
+						 <div>
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Outdoors-man-portrait_%28cropped%29.jpg/1200px-Outdoors-man-portrait_%28cropped%29.jpg"/>
+						 </div>
+						 <h5 style="text-align:center;margin-top:80px;font-size:20px;font-weight:600;color:#0B1A4A;
+						 ;">Abhishek</h5>
+						<h3 style="margin-top: 21px;font-size:17px;text-align: justify;font-weight:normal;line-height:28px;color:#0B1A4A;">A privileged to be a volunteer at Peace Ngo in Jamshedpur. Peace is a nongovernmental organisation is dedicated towards empowerment of the Women,Child labour, Health.</h3>
+					</div>
+			</div>
+			
+
+			<h1 id="sponsers">sponsers</h1>
+			<div id="patners">
+				<div>
+					<marquee style="margin-top:40px;height:200px;padding-top:16px;" onmouseover="this.stop()" onmouseout="this.start()">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Facebook_New_Logo_%282015%29.svg/800px-Facebook_New_Logo_%282015%29.svg.png" height="180px" width="250px" style="margin-left:35px;"/>
+						<img src="https://thekashmirhorizon.com/wp-content/uploads/twitter-logo.jpg" height="180px" width="250px" style="margin-left:35px;"/>
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Salesforce.com_logo.svg/1200px-Salesforce.com_logo.svg.png" height="180px" width="250px" style="margin-left:35px;"/>
+						<img src="https://logos-world.net/wp-content/uploads/2022/02/ServiceNow-Logo.jpg" height="180px" width="250px" style="margin-left:35px;"/>
+						<img src="https://mma.prnewswire.com/media/633364/Mindtree_Logo.jp?p=facebook" height="180px" width="250px" style="margin-left:35px;"/>
+						<img src="https://1000logos.net/wp-content/uploads/2021/09/Cognizant-Logo.jpg" height="180px" width="250px" style="margin-left:35px;"/>
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Facebook_New_Logo_%282015%29.svg/800px-Facebook_New_Logo_%282015%29.svg.png" height="180px" width="250px" style="margin-left:35px;"/>
+						<img src="https://thekashmirhorizon.com/wp-content/uploads/twitter-logo.jpg" height="180px" width="250px" style="margin-left:35px;"/>
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Salesforce.com_logo.svg/1200px-Salesforce.com_logo.svg.png" height="180px" width="250px" style="margin-left:35px;"/>
+						<img src="https://logos-world.net/wp-content/uploads/2022/02/ServiceNow-Logo.jpg" height="180px" width="250px" style="margin-left:35px;"/>
+						<img src="https://mma.prnewswire.com/media/633364/Mindtree_Logo.jp?p=facebook" height="180px" width="250px" style="margin-left:35px;"/>
+						<img src="https://1000logos.net/wp-content/uploads/2021/09/Cognizant-Logo.jpg" height="180px" width="250px" style="margin-left:35px;"/>
+						
+					</marquee>
+					
+				</div>
+			</div>
+
+			<!--<div id="donaters">
+				<div>
+
+				</div>
+			</div>-->
+
+			<div id="footer">
+				<div id="threeFooter">
+					<div id="footer-list">
+						<div class="list">
+
+							<ul>
+								<li>About us</li>
+								<li>About Peace</li>
+								<li>Imapct</li>
+								<li>Reach and presence</li>
+								<li>Privicy Policy</li>
+							</ul>
+						</div>
+						<div class="list">
+							<ul>
+								<li>Our work</li>
+								<li>Education</li>
+								<li>Health</li>
+								<li>Livelihood</li>
+								<li>Women Empowerment</li>
+								<li>Disaster Response</li>
+								<li>Education</li>
+								<li>Health</li>
+								<li>Livelihood</li>
+								<li>Women Empowerment</li>
+								<li>Disaster Response</li>
+							</ul>
+
+						</div>
+						<div class="list">
+							
+							<ul>
+								<li>Programs</li>
+								<li>Individual Support</li>
+								<li>Corporate Partnerships</li>
+								<li>Volunteer</li>
+								<li>School Partnerships</li>
+								<li>Careers</li>
+								<li>Corporate Partnerships</li>
+								<li>Volunteer</li>
+								<li>School Partnerships</li>
+								<li>Careers</li>
+							</ul>
+						</div>
+						<div id="down">
+							<h4 style="margin:10px;">
+								<span style="font-size:14px;color:white;">Address:New baradwari, Sakchi, Jamshedpur 831001<span>
+							</h4>
+							<h4 style="margin:10px;">
+								<span style="font-size:14px;color:white;">Contact no. : 9006445307</span>
+							</h4>
+						</div>
+					</div>
+					<div id="map">
+						<div>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14712.120317632074!2d86.2056833!3d22.8013493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700988425946!5m2!1sen!2sin"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="height:363px;width:280px;padding:10px;border: 0;" height="363px" width="280px"></iframe>
+						</div>
+						<div>
+							<img src="https://w7.pngwing.com/pngs/175/452/png-transparent-facebook-logo-facebook-icon-logo-facebook-icon-blue-text-rectangle.png" height="35px" width="35px" style="margin-left:22px;"/>
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" height="35px" width="35px"/>
+							<img src="https://seeklogo.com/images/W/whatsapp-icon-logo-BDC0A8063B-seeklogo.com.png" height="35px" width="35px"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--script file wow.js animation part-->
+		<script src="wow.min.js"></script>
+		<script>
+			new WOW().init();
+	   </script>
+	</body>
+</html>

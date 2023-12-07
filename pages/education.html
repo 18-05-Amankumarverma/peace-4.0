@@ -1,0 +1,490 @@
+<html>
+<head>
+    <title>Education</title>
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            font-family:arial;
+        }
+        a{
+            text-decoration:none;
+            color:black;
+        }
+        #nav-bar{
+				height:70px;
+				width:1200px;
+				background-color:#f6f7f8;
+				border-radius:20px;
+				margin:10px 0px;
+			 }
+			 #nav-bar #logo{
+				width:180px;
+				height:70px;
+				float:left;
+				border-radius:20px 0px 0px 20px
+			 }
+			 #nav-bar #search-bar{
+				height:70px;
+				width:400px;
+				float:left;
+				
+			 }
+			 #nav-bar #search-bar div{
+				height: 20px;
+    			width: 360px;
+    			padding: 10px 10px;
+    			border-radius: 20px;
+    			margin-left: 10px;
+    			margin-top: 15px;
+    			/* margin: 0px auto; */
+    			float: left;
+    			background-color:#fff;
+			 }
+			 #nav-bar #logo img{   
+   				 width: 130px;
+   				 height: 70px;
+   				 /* border-radius: 20px; */
+   				 margin: 0px auto;
+   				 margin-left: 20px;
+
+			 }
+			 #all-page-links{
+				height:70px;
+				width:620px;
+				float:left;
+				border-radius:0px 20px 20px 0px;
+				
+			 }
+			 #all-page-links ul{
+				list-style-type: none;
+				margin-right:10px;
+				float:right;
+                margin-top:20px;
+			 }
+			 #all-page-links ul li{
+				float:left;
+				padding:10px 25px;
+				margin-right:15px;
+				position:relative;
+                height:35px;
+			 }
+			 #all-page-links ul li span{
+				
+				height:2px;
+				width:0px;
+				display:block;
+				position:absolute;
+				transition:all 1s;
+			 }
+			 #all-page-links ul li:hover span{
+				width:90px;
+				background-color:olive;
+			 }
+			 #all-page-links ul li a{
+				text-decoration:none;
+				color:black;
+			 }
+			
+        #container{
+            width:1200px;
+            margin:0px auto;
+        }
+        #container #text{
+            width:1200px;
+            height:400px;
+            margin-top:50px;
+        }
+        #container #text h1{
+            font-size:63px;
+            background-image:url('background/brush.png');
+            background-position:center;
+            background-repeat:no-repeat;
+            background-size:cover;
+            font-weight:500;
+            height:260px;
+            width:560px;
+            float:left;
+            padding:20px;
+            line-height:65px;
+            letter-spacing:4px;
+            
+        }
+        #container #text a{
+            float:left;
+        }
+        #container #text p{
+            font-weight:500;
+            height:240px;
+            width:540px;
+            float:left;
+            letter-spacing:2px;line-height:28px;
+            padding:30px;
+            text-align:justify;
+            color: #0B1A4A;
+            font-size: 17px;
+            font-weight: 400;
+        }
+        #container #text a{
+            padding:10px 30px;
+            background-color:yellow;
+            font-size:20px;
+            font-weight:500;
+            margin-left:20px;
+        }#container #photo{
+            width:1200px;
+            height:500px;
+            margin-top:70px;
+        }
+        #container #photo img{
+            position:absolute;
+        }
+        #container #photo img:nth-child(1){
+            left:155px;
+        }
+        #container #photo img:nth-child(2){
+            left:618px;
+            top:400px;
+        }
+        #container #photo img:nth-child(3){
+            top:744px;
+            left:621px;
+        }
+        #container #photo img:nth-child(4){
+            left:904px;
+            top:744px;
+        }
+        #box-container{
+            width:1200px;
+            height:400px;
+            margin-top:40px;
+        }
+        #box-container #image-text{
+            width:600px;
+            height:280px;
+            float:left;
+            border-radius:20px;
+            margin-left:20px;
+            background-color:#91A3B0;
+
+        }
+        #box-container #image-text img{
+            height:280px;
+            width:243px;
+            float:left;
+            border-bottom-left-radius:20px;
+            border-top-left-radius:20px;
+            background-image:url('../background/background3.jpg');
+        }
+        #box-container #image-text div{
+            height: 260px;
+            width: 337px;
+            float: left;
+            padding: 10px;
+            border-bottom-right-radius: 20px;
+            border-top-right-radius: 20px;
+        } 
+        #box-container #image-text div h1{
+        
+        }
+        #box-container #image-text div p{
+            width: 300px;
+            margin-top: 17px;
+            line-height: 22px;
+            /* letter-spacing: 1.3px; */
+            text-align: justify;
+            color: #0B1A4A;
+            font-size: 17px;
+            font-weight: 400;
+        }
+        #box-container #support{
+            width: 410px;
+            height: 219px;
+            float: right;
+            border-radius: 20px;
+            padding: 20px;
+            margin-right: 20px;
+            padding-top: 40px;  
+            background-color:#96ded2;          
+            
+        }
+        #box-container #support a{
+            padding: 16px 50px;
+             background: yellow;
+             /* margin-top: 39px; */
+             font-size: 20px;
+			box-shadow:rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        }
+        #box-container #support p{
+           
+            width: 300px;
+            margin-top: 60px;
+            line-height: 22px;
+            /* letter-spacing: 1.3px; */
+            text-align: justify;
+            color: #0B1A4A;
+            font-size: 17px;
+            font-weight: 400;
+            
+        }
+        #main-work{
+            height:600px;
+            width:1200px;
+            background-color:red;
+        }
+        
+        #footer{
+				height:500px;
+				width:1200px;
+				border-top:1px solid #1b1b1b;
+				margin:0px auto;
+				border-radius:20px 20px 0px 0px;
+				background-color:#0c6051;
+			}
+			#footer #threeFooter{
+				height:500px;
+				width:1200px;
+			}
+			#footer #threeFooter #footer-list{
+				height:500px;
+				width:900px;
+				float:left;
+			}
+			#footer #threeFooter #footer-list #down{
+				height:80px;
+				width:720px;
+				position:absolute;
+				margin-top:400px;
+				
+			}
+			#footer #threeFooter #footer-list #down{
+				padding:10px 40px;
+				width:820px;
+				 
+				
+			}
+			
+			#footer #threeFooter #footer-list .list{
+				height:316px;
+				width:300px;
+				float:left;
+				
+			}
+			
+			
+			#footer #threeFooter #footer-list .list ul{
+				height:300px;
+				list-style-type:none;
+				width:260px;
+				float:left;
+                margin-top: 24px;
+                margin-left: 45px;
+				
+			}
+			#footer #threeFooter #footer-list .list ul li{
+			     font-size:14px;
+				 font-weight:500;
+				 padding:5px;
+				 color:white;
+				
+			}
+			#footer #threeFooter #footer-list .list ul li:first-child{
+				font-size:30px;
+				text-decoration:underline;
+				margin-bottom:20px;
+				
+			}
+			#footer #threeFooter #map{
+				height:500px;
+				width:300px;
+				float:left;
+			}
+			#footer #threeFooter #map div:first-child{
+				height:383px;
+				width:300px;
+				float:left;
+				margin-top:16px;
+			
+
+			}#footer #threeFooter #map div:last-child{
+				height:100px;
+				width:300px;
+				float:left;
+				
+
+			}
+			#footer #threeFooter #map div:last-child img{
+				padding:20px 25px
+
+			}
+
+            #navbar-container{
+                width: 231;
+                height: 290px;
+                position: absolute;
+                z-index: 9999;
+                display: block;
+                right: -65px;
+                top: 31px;
+                display:none;
+			
+        }
+        #navbar-container #drop-down{
+            height: 231px;
+            width: 180px;
+            background-color: plum;
+            list-style-type: none;
+            padding: 10px;
+            font-family: arial;
+        }
+		#nav-bar #all-page-links ul #drop:hover #navbar-container{
+			display:block;
+		}
+		#navbar-container #drop-down li{
+			padding:0px;
+			height:;
+			width:180px;
+			letter-spacing:
+		}
+        #navbar-container #drop-down li a{
+            text-decoration:none;
+            font-size:16px;
+            line-height:37px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="nav-bar">
+            <div id="logo">
+                <img src="../background/logo/logo3.png"/>
+            </div>
+            <div id="search-bar">
+                <div>
+                    Search
+                </div>
+            </div>
+            <div id="all-page-links">
+                <ul>
+                    <li style="margin-right:40px;"><a href="../index.html">Home</a><span></span></li>
+                    <li><a href="about.html">About Us</a><span></span></li>
+                    <li id="drop"><a href="#">Our Work</a><span></span>
+                        	
+								<div id="navbar-container">
+									<ul id="drop-down">
+										<li><a href="pages/education.html">Education</a></li>
+										<li><a href="pages/womenEmpowerment.html">Women Empowerment</a></li>
+										<li><a href="#">Disaster Response</a></li>
+										<li><a href="#">Child Labour</a></li>
+										<li><a href="#">Old age</a></li>
+										<li><a href="#">Health</a></li>
+									</ul>
+								</div>
+
+                    </li>
+                    <li><a href="#">Contact Us</a><span></span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="text">
+            <h1>A World Where no Child's life is Uneducated</h1>
+            <p>Mission Education works with the objective of empowering underprivileged children by providing education and wellness support. The programme is well design for the New Education Policy (2020) and promote lifelong learning opportunities for all. Mission Education works with children (3-18 years) living in difficult circumstances, children from poor families, remote villages and hard to reach areas.</p>
+        </div>
+
+        <div id="photo">
+            <img src="https://www.eurokidsindia.com/blog/wp-content/uploads/2023/01/importance-of-early-year-child-education.jpg" height="400px" width="380px"/>
+            <img src="https://www.educationworld.in/wp-content/uploads/2016/12/thoughtful-little-girl-with-book-near-a-school-board_1150-3853.jpg" height="300px" width="350px"/>
+            <img src="https://www.oxfamindia.org/sites/default/files/inline-images/gce5.jpg" height="200px" width="200px"/>
+            <img src="https://www.newsclick.in/sites/default/files/styles/responsive_885/public/2022-10/children35%20%281%29.jpg?itok=5AzmMMjF" height="200px" width="200px"/>
+        </div>
+        <div id="box-container">
+            <div id="image-text">
+                <img src="../background/men.png"/>
+                <div>
+                    <h1>A family of 10 Techers and 200+ students</h1>
+                    <p>We have a group of teachers who are Volunterly giving services to us by giving there valunable time. Our Techers have btech level degree</p>
+                </div>
+            </div>
+            <div id="support">
+                <a href="">Say hi to our Techers</a>
+                <p>Through this donation we buy books for the children who are not able get books. Your small donation is valunable for us. </p>
+            </div>
+        </div>
+
+        <div id="main-work">
+
+        </div>
+
+        <div id="footer">
+            <div id="threeFooter">
+                <div id="footer-list">
+                    <div class="list">
+
+                        <ul>
+                            <li>About us</li>
+                            <li>About Peace</li>
+                            <li>Imapct</li>
+                            <li>Reach and presence</li>
+                            <li>Privicy Policy</li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li>Our work</li>
+                            <li>Education</li>
+                            <li>Health</li>
+                            <li>Livelihood</li>
+                            <li>Women Empowerment</li>
+                            <li>Disaster Response</li>
+                            <li>Education</li>
+                            <li>Health</li>
+                            <li>Livelihood</li>
+                            <li>Women Empowerment</li>
+                            <li>Disaster Response</li>
+                        </ul>
+
+                    </div>
+                    <div class="list">
+                        
+                        <ul>
+                            <li>Programs</li>
+                            <li>Individual Support</li>
+                            <li>Corporate Partnerships</li>
+                            <li>Volunteer</li>
+                            <li>School Partnerships</li>
+                            <li>Careers</li>
+                            <li>Corporate Partnerships</li>
+                            <li>Volunteer</li>
+                            <li>School Partnerships</li>
+                            <li>Careers</li>
+                        </ul>
+                    </div>
+                    <div id="down">
+                        <h4 style="margin:10px;">
+                            <span style="font-size:14px;color:white;">Address:New baradwari, Sakchi, Jamshedpur 831001<span>
+                        </h4>
+                        <h4 style="margin:10px;">
+                            <span style="font-size:14px;color:white;">Contact no. : 9006445307</span>
+                        </h4>
+                    </div>
+                </div>
+                <div id="map">
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14712.120317632074!2d86.2056833!3d22.8013493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700988425946!5m2!1sen!2sin"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="height:363px;width:280px;padding:10px;border: 0;" height="363px" width="280px"></iframe>
+                    </div>
+                    <div>
+                        <img src="https://w7.pngwing.com/pngs/175/452/png-transparent-facebook-logo-facebook-icon-logo-facebook-icon-blue-text-rectangle.png" height="35px" width="35px" style="margin-left:22px;"/>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" height="35px" width="35px"/>
+                        <img src="https://seeklogo.com/images/W/whatsapp-icon-logo-BDC0A8063B-seeklogo.com.png" height="35px" width="35px"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

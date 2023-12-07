@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            font-family:arial;
+        }
+        #container{
+            width:1200px;
+            margin:30px auto;
+        }
+      
+        #nav-bar{
+				height:70px;
+				width:1200px;
+				background-color:#f6f7f8;
+				border-radius:20px;
+				
+			 }
+			 #nav-bar #logo{
+				width:180px;
+				height:70px;
+				float:left;
+				border-radius:20px 0px 0px 20px
+			 }
+			 #nav-bar #search-bar{
+				height:70px;
+				width:400px;
+				float:left;
+				
+			 }
+			 #nav-bar #search-bar div{
+				height: 20px;
+    			width: 360px;
+    			padding: 10px 10px;
+    			border-radius: 20px;
+    			margin-left: 10px;
+    			margin-top: 15px;
+    			/* margin: 0px auto; */
+    			float: left;
+    			background-color:#fff;
+			 }
+			 #nav-bar #logo img{   
+   				 width: 130px;
+   				 height: 70px;
+   				 /* border-radius: 20px; */
+   				 margin: 0px auto;
+   				 margin-left: 20px;
+
+			 }
+			 #all-page-links{
+				height:70px;
+				width:620px;
+				float:left;
+				border-radius:0px 20px 20px 0px;
+				padding-top:16px;
+				
+			 }
+			 #all-page-links ul{
+				list-style-type: none;
+				margin-right:10px;
+				float:right;
+
+			 }
+			 #all-page-links ul li{
+				float:left;
+				padding:10px 25px;
+				margin-left:2px;
+                height:35px;
+                
+			 }
+			 #all-page-links ul li span{
+				
+				height:2px;
+				width:0px;
+				display:block;
+				position:absolute;
+				transition:all 1s;
+			 }
+             
+			 #all-page-links ul li:hover span{
+				width:90px;
+				background-color:olive;
+			 }
+			 #all-page-links ul li a{
+				text-decoration:none;
+				color:black;
+			 }#navbar-container{
+            width:231;
+            height:250px;
+			position: absolute;
+    		z-index: 9999;
+			display:block;
+			right:247px;
+			top:80px;
+			display:none;
+			
+        }
+        #navbar-container #drop-down{
+            height: 231px;
+            width: 180px;
+            background-color: plum;
+            list-style-type: none;
+            padding: 10px;
+            font-family: arial;
+        }
+		#nav-bar #all-page-links ul #drop:hover #navbar-container{
+			display:block;
+		}
+		#navbar-container #drop-down li{
+			padding:0px;
+			width:180px;
+			letter-spacing:;
+		}
+        #navbar-container #drop-down li a{
+            text-decoration:none;
+            font-size:16px;
+            line-height:37px;
+        }
+       
+
+		
+        #landing-page{
+            height:700px;
+            width:1200px;
+        }
+        #landing1{
+            height: 680px;
+            padding: 10px;
+            width: 580px;
+            float: left;
+        }
+        #three-btn{
+            height: 50px;
+            padding: 10px 20px;
+            width: 540px;
+            margin-top:20px;
+        }
+        #three-btn a{
+            font-size:17px;
+            text-decoration:none;
+            color:black;
+            padding:10px 35px;
+            float: left;
+            margin-left:38px;
+            background-color:yellow;
+        }
+        #all-headings{
+            height:400px;
+            width:580px;
+            margin-top:50px;
+        }
+        #all-headings h1{
+            font-size:50px;
+            font-weight:700;
+            letter-spacing:2px;
+            
+        }
+        #all-headings p{
+            height:183px;
+            width:580px;
+            margin-top:30px;
+            font-size:25px;
+            letter-spacing:2px;
+            text-align:justify;
+            line-height:33px;
+            padding-top:15px;
+        }
+        #btn{
+            height:120px;
+            width:580px;
+            margin-top:10px;
+        }
+        #appointment{
+            width: 300px;
+            height:120px;
+            position:relative;
+            float: left;
+        }
+        #appointment a{
+            padding: 20px 18px;
+            border-radius: 30px;
+            position: absolute;
+            top: 28px;
+            letter-spacing: 1.1px;
+            left: 15px;
+            color:black;
+            font-size: 18px;
+            font-weight: 500px;
+            text-decoration: none;
+            background-color:yellow;
+
+        }
+        #circle-container{
+            width:280px;
+            height:120px;
+            float: left;
+        }
+        #landing2{
+            height:700px;
+            width:600px;
+            float: left;
+            position: relative;
+        }
+        #landing2 #main-image{
+            height: 500px;
+            width: 400px;
+            margin-top: 50px;
+            margin-left: 82px;
+            border-radius: 30px;
+            border:.2px solid black;
+        }
+        #landing2 #overlay{
+            height: 220px;
+            width: 180px;
+            position: absolute;
+            top: 85px;
+            background-color: white;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 12px;
+            right: 0px;
+        }
+        #landing2 #overlay2{
+            height: 60px;
+            width: 230px;
+            border: 1px solid black;
+            border-radius: 12px;
+            background-color: white;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            left: 44px;
+            padding: 10px;
+            position: absolute;
+            bottom: 117px;
+
+        }
+        #para{
+            height:400px;
+            width:1200px;
+            margin-top:80px;
+        }
+        #para h1{
+            font-size:55px;
+            letter-spacing:2px;
+
+            font-weight:700;
+            text-align:center;
+
+        }
+        #para p{
+            font-size:20px;
+            letter-spacing:2px;
+            line-height:30px;
+            text-align:justify;
+            color:;
+            height:300px;
+            width:1200px;
+            margin-top:50px;
+        }
+        #main-works{
+            height:480px;
+            width:1180px;
+            padding:10px;
+            margin-top:80px;
+        }
+        #main-works #first-div{
+            height:480px;
+            width:1180px;
+        }
+        #first-div #image{
+            height:480px;
+            width:590px;
+            float: left;
+        }
+        #first-div #text{
+            float: left;
+            height:480px;
+            width:590px;
+        }
+        #text h1{
+            font-size:50px;
+            letter-spacing:2px;
+            padding:0px 20px;
+        }
+        #text p{
+            margin-top:30px;
+            text-align:justify;
+            font-size:18px;
+            letter-spacing:2px;
+            padding:0px 20px;
+            width:550px;
+            line-height:25px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="nav-bar">
+            <div id="logo">
+                <img src="../background/logo/logo2.png"/>
+            </div>
+            <div id="search-bar">
+                <div>
+                    Search
+                </div>
+            </div>
+            <div id="all-page-links">
+                <ul>
+                    <li><a href="../index.html">Home</a><span></span></li>
+                    <li><a href="about.html">About Us</a><span></span></li>
+                    <li id="drop"><a href="#">Our Work</a><span></span>
+                       
+                        <div id="navbar-container">
+                            <ul id="drop-down">
+                                <li><a href="education.html">Education</a></li>
+                                <li><a href="womenEmpowerment.html">Women Empowerment</a></li>
+                                <li><a href="#">Disaster Response</a></li>
+                                <li><a href="#">Child Labour</a></li>
+                                <li><a href="#">Old age</a></li>
+                                <li><a href="#">Health</a></li>
+                            </ul>
+                        </div>
+                       
+                    
+                    
+                    </li>
+                    <li><a href="#">Contact Us</a><span></span></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="landing-page">
+            <div id="landing1">
+                <div id="three-btn">
+                    <a href="#">Health</a>
+                    <a href="#">Medicine</a>
+                    <a href="#">Diet</a>
+                </div>
+                <div id="all-headings">
+                    <h1>Mental Health is not a</h1>
+                    <h1> Destination, but a </h1>
+                    <h1>Process.</h1>
+                    <p>Our Work has resulted in positive change. We have educated millions about mental health conditions and reduced barriers to treatment and services</p>
+                    <div id="btn">
+                        <div id="appointment">
+                            <a href="#">Schedule Appointment</a>
+                        </div>
+                        <div id="circle-container">
+                            <div id="" style="background-color:rgb(71, 208, 71);height: 67px;width: 60px;border-radius: 50%;float: left;margin-top: 14px;padding-left: 35px;font-weight:bold;padding-top: 30px;">95%</div>
+                            <h4 style="float: left;font-size: 13px;margin-left: 10px;height: 71px;width: 170px;text-align: center;padding-top: 50px;">We have <span style="color:rgb(71, 208, 71)">success</span> rate so far</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="landing2">
+                <img src="https://thefamilydoctor.co.in/wp-content/uploads/2020/01/I2-e1578898118449.png" id="main-image"/>
+                <div id="overlay">
+                    <h4 style="font-size:18px;">10M+</h4>
+                    <h4 style="margin-top:10px;font-size:18px;font-size:18px;font-weight:500;letter-spacing:1.1px;">Every year helping people around the world</h4>
+                    <img src="../background/background3.jpg" height="50px" width="100px" style="margin-top:15px;margin-bottom:15px;"/><br/>
+                    <a href="#" style="padding:4px 10px;background-color:yellow;font-weight:bold;
+                    ;border-radius:20px;text-decoration:none;color:black;">Campign</a>
+                </div>
+                <div id="overlay2">
+                        Consult with Doctors about Health
+                </div>
+            </div>
+        </div>
+        <div id="para">
+            <h1>Health</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum corrupti tempore architecto, recusandae dicta nemo sint quibusdam deleniti. Tempora quae vitae rem natus veniam ex earum cupiditate asperiores, iste reiciendis. Temporibus deserunt porro ullam repellat voluptate corrupti vero, fugit ut dolorum sequi accusantium harum doloribus beatae, consequatur voluptatum! Perferendis assumenda illum repudiandae dolores ducimus quos, odio, fugiat laudantium recusandae reprehenderit eaque quia sit ipsum in iure! Unde, ex! Sed, odio. Voluptate ullam dolor a soluta libero illo quis impedit iure quidem eum amet nisi eos perferendis, laudantium voluptatem, eaque reprehenderit? Nihil aliquam suscipit minus. Molestias odit maxime corporis deleniti modi.</p>
+        </div>
+        <div id="main-works">
+            <div id="first-div">
+                <div id="image">
+                    <img src="https://americasbestcareplus.com/wp-content/uploads/2020/12/Cough.jpg" height="480px" width="590px"/>
+                </div>
+                <div id="text">
+                    <h1>Health Education</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quia ducimus, porro ad blanditiis harum culpa? Veritatis officia, amet similique voluptate commodi aut expedita natus doloremque adipisci explicabo, repellat voluptates molestiae dolorem. Quisquam assumenda laborum officiis, quia laudantium repellat qui labore vel, dignissimos, deleniti alias facere eaque numquam inventore. Optio dicta officiis dignissimos accusamus quam commodi minima ut ipsa ullam nam, reprehenderit deleniti magni excepturi, quasi atque laudantium nihil voluptates perspiciatis aperiam. Magni modi vitae aperiam quidem, beatae earum tempore illo ipsum cum repellendus eligendi laborum ea, dolores sunt consequuntur! Commodi aliquid odit voluptates modi. Impedit atque voluptatem rem laborum!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
